@@ -27,10 +27,10 @@ WiFiClient wifiClient;
 //MQTT Server
 const char* BROKER_MQTT = "mqtt.eclipse.org"; //URL do broker MQTT que se deseja utilizar
 int BROKER_PORT = 1883;                       // Porta do Broker MQTT
-#define ID_MQTT "geisonFeitosaEspTeste"       //Informe um ID unico e seu. Caso sejam usados IDs repetidos a ultima conexão irá sobrepor a anterior. 
-#define TOPIC_SUBSCRIBE "geisonFeitosaLed"    //Informe um Tópico único. Caso sejam usados tópicos em duplicidade, o último irá eliminar o anterior.
-#define TOPIC_PUBLISH_TEMP "geisonFeitosaTemp"
-#define TOPIC_PUBLISH_HUMID "geisonFeitosaHumid"
+#define ID_MQTT "***EspTeste"       //Informe um ID unico e seu. Caso sejam usados IDs repetidos a ultima conexão irá sobrepor a anterior. 
+#define TOPIC_SUBSCRIBE "***Led"    //Informe um Tópico único. Caso sejam usados tópicos em duplicidade, o último irá eliminar o anterior.
+#define TOPIC_PUBLISH_TEMP "***Temp"
+#define TOPIC_PUBLISH_HUMID "***Humid"
 PubSubClient MQTT(wifiClient);                //Instancia o Cliente MQTT passando o objeto espClient
 
 //Declaração das Funções
